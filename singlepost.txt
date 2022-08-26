@@ -1,0 +1,54 @@
+import "./singlePost.css";
+
+/**
+ * @author
+ * @function SinglePost
+ **/
+
+export const SinglePost = (props) => {
+  return (
+    <div className="singlePost">
+      <div className="singlePostWrapper"></div>
+      <img
+        src={require("../../assets/bsv-convention.jpg")}
+        alt="bsv-convention"
+        className="singlePostImg"
+      />
+      <h1 className="singlePostTitle">
+        Better payments with BSV
+        <div className="singlePostEdit">
+          <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
+          <i className="singlePostIcon fa-solid fa-trash-can"></i>
+        </div>
+      </h1>
+      <div className="singlePostInfo">
+        <span className="singlePostAuthor">coingeek</span>
+        <span className="singlePostDate">May 21, 2022</span>
+      </div>
+      <p className="singlePostDesc">
+        The panel titled “Better Payments with BSV” was moderated by CoinGeek’s
+        Patrick Thompson, Centbee’s Lorien Gamaroff, MoneySwipe’s Kumaraguru
+        Ramanujam, HandCash Co-founder Rafa Jimenez, and Centi’s Bernhard Müller
+        being the panelists. The question many outside Bitcoin ask is why turn
+        to BSV while they already have a Visa card, or they can make payments
+        through Apple Pay, Venmo, and the rest. The very low costs of BSV
+        payments and the inherent traceability on the BSV blockchain are two of
+        the biggest reasons to hop on Bitcoin, Lorien noted. His company,
+        Centbee, has been among the leading BSV payments platforms, allowing
+        users, most of them young people, to pay at major outlets without
+        converting their Bitcoin to fiat. MoneySwipe’s target is a bit
+        different. Ramanujam tells the audience that he wants to change the
+        remittance landscape, especially in his homeland of India, the world’s
+        largest remittance destination. Last year, the country, which is home to
+        17% of the world’s population, received $87 billion in remittances, but
+        the fees to the consumers are still way too high. The panelists noted
+        that with Bitcoin SV’s massive scaling, very low fees, and real-time
+        transactions, a new world of opportunities and business models has
+        opened up. With micropayments, for instance, pay-per-use becomes a real
+        possibility. And as Ramanujam pointed out, Bitcoin SV can also be used
+        as a backend network on which stablecoins, which are regulatory
+        compliant, are issued and settled.
+      </p>
+    </div>
+  );
+};

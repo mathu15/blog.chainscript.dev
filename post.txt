@@ -1,0 +1,46 @@
+import { Link } from "react-router-dom";
+import "./post.css";
+import blog from "../../data/blog.json";
+
+/**
+ * @author
+ * @function Post
+ **/
+
+export const Post = (props) => {
+  return (
+    <div className="post">
+      <Link className="link" to="/post/1">
+        <img
+          src={require("../../assets/bsv-convention.jpg")}
+          alt="convention"
+          className="postImg"
+        />
+      </Link>
+      <div className="postInfo">
+        <div className="postCats">
+          <span className="postCat">business</span>
+          <span className="postCat">events</span>
+        </div>
+        <Link className="link" to="/post/1">
+          <span className="postTitle">Better payments with BSV</span>
+        </Link>
+        <hr />
+        <span className="postDate">May 21, 2022 </span>
+      </div>
+      <p className="postDesc">
+        chainscript’s target is a bit different. Kumaraguru Ramanujam tells the
+        audience that he wants to change the remittance landscape.chainscript’s
+        target is a bit different. Kumaraguru Ramanujam tells the audience that
+        he wants to change the remittance landscape chainscript’s target is a
+        bit different. Kumaraguru Ramanujam tells the audience that he wants to
+        change the remittance landscape.chainscript’s target is a bit different.
+        Kumaraguru Ramanujam tells the audience that he wants to change the
+        remittance landscape chainscript’s target is a bit different. Kumaraguru
+        Ramanujam tells the audience that he wants to change the remittance
+        landscape.chainscript’s target is a bit different. Kumaraguru Ramanujam
+        tells the audience that he wants to change the remittance landscape
+      </p>
+    </div>
+  );
+};
